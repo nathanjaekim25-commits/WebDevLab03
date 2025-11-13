@@ -59,8 +59,6 @@ for key in tempgraphDict:
     if int(key) <= endYear and int(key) >= startYear:
         graphDict[key] = tempgraphDict[key]
 
-st.write(graphDict)
-
 # Toggle display total launches
 displayTotal = st.checkbox("Display total launches")
 if displayTotal:
@@ -85,6 +83,7 @@ for year in graphDict.keys():
     else:
         idList += ["successful launches"] + ["failed launches"]
 
+# Rendering graph
 spaceXdf = pd.DataFrame(
     {
         "Year": xList,
@@ -95,4 +94,5 @@ st.line_chart(spaceXdf, x="Year", y="Launch Count", color="Legend")
 
 
 #########
+
 

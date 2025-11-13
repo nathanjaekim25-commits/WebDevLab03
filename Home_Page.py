@@ -8,7 +8,7 @@ st.title("Web Development Lab03")
 
 st.header("CS 1301")
 st.subheader("Team 114, Web Development - Section B")
-st.subheader("Shreyas Griota, Nathan Kim")
+st.subheader("Nathan Kim, Shreyas Griota")
 st.write("Our project will use the SpaceX API that lists their launches, current projects and technologies! The API reqeuest URL is: https://api.spacexdata.com/v3")
 
 st.divider()
